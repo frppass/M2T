@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#0f172a">
     <title>M3U/TXT Converter - Python in Browser - 200MB Support</title>
     
-    <!-- ========== PWA MANIFEST - FIXED VERSION ========== -->
+    <!-- ========== PWA MANIFEST ========== -->
     <link rel="manifest" href='data:application/manifest+json,{"name":"M3U Converter 200MB","short_name":"M3U Conv 200MB","start_url":"./?v=1","display":"standalone","background_color":"#0f172a","theme_color":"#0f172a","icons":[{"src":"https://img.icons8.com/color/192/000000/python.png","sizes":"192x192","type":"image/png"},{"src":"https://img.icons8.com/color/512/000000/python.png","sizes":"512x512","type":"image/png"}]}'>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="M3U Converter 200MB">
@@ -1221,7 +1221,6 @@
             justify-content: flex-end;
         }
         
-        /* PARAMETER OPTIONS STYLES */
         .parameter-options {
             margin-top: 15px;
             padding: 15px;
@@ -1459,14 +1458,12 @@
             border-radius: 6px;
         }
         
-        /* Parameter Template Styles */
         .parameter-templates h5 {
             color: #93c5fd;
             margin-bottom: 10px;
             font-size: 0.95rem;
         }
         
-        /* ========== PARAMETER FILTER STYLES ========== */
         .parameter-filter-options {
             margin-top: 15px;
             padding: 15px;
@@ -1680,7 +1677,6 @@
             color: #f59e0b;
         }
         
-        /* PWA Mode Adjustments */
         @media (display-mode: standalone) {
             header {
                 padding-top: calc(20px + env(safe-area-inset-top));
@@ -1695,7 +1691,6 @@
             }
         }
         
-        /* PWA Install Button Animation */
         .pwa-install {
             animation: pulseInstall 2s infinite;
         }
@@ -1706,7 +1701,6 @@
             100% { transform: scale(1); }
         }
         
-        /* Install Toast */
         .install-toast {
             position: fixed;
             bottom: 80px;
@@ -1749,7 +1743,6 @@
             padding: 5px;
         }
         
-        /* ========== FILE INFO STYLES ========== */
         .file-info-display {
             margin-top: 15px;
             padding: 15px;
@@ -1799,7 +1792,6 @@
             background-color: rgba(239, 68, 68, 0.1);
         }
         
-        /* ========== DELIMITER OPTIONS STYLES ========== */
         .delimiter-options {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1846,7 +1838,6 @@
             }
         }
         
-        /* Format Support Info */
         .format-support-info {
             margin-top: 10px;
             padding: 10px;
@@ -1885,7 +1876,6 @@
             margin-left: 5px;
         }
         
-        /* Large File Support Styles */
         .large-file-support {
             margin-top: 15px;
             padding: 15px;
@@ -2480,7 +2470,24 @@
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTINF:-1 tvg-id="IPTVTV.id" tvg-name="IPTVTV" tvg-logo="https://example.com/logo.jpg" group-title="IPTV",IPTV TV
-https://http://example.com/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd'>M3U with license and EXTVLCOPT</li>
+http://example.com/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://imgur.com/QMB9sFW.png" group-title="Cignal", BBC Earth
+http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd
+
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=http://example.com/forsat/forsat.php
+#KODIPROP:inputstream.adaptive.stream_headers=user-agent=ExoPlayerLib/2.10.5
+#EXTINF:-1 tvg-id="HBO.id" tvg-name="HBO" tvg-logo="example.com /logo/movies/hbo.jpg" group-title="MOVIES",HBO
+https://example.com:1000/live/master/3/4028c6856b6088c3016b87d64b970b53/manifest.mpd
+
+#KODIPROP:inputstream.adaptive.stream_headers=Origin=https://www.example.com
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.example.com
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.stream_headers=Connection=keep-alive
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=|user-agent=ExoPlayerLib/2.19.1& Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-id="HBO" group-title="MOVIES" group-logo="" tvg-logo="https://iili.io/Ju79f8g.png",HBO
+https://example.com/atm/DASH/hbo/manifest.mpd'>M3U with license and streaming headers</li>
                                     <li role="button" tabindex="0" data-input='MOVIES,#genre#
 John Wick,http://example.com/movie1.m3u8$license-key=abc123$license-type=clearkey$User-Agent=Mozilla/5.0$Referer=https://example.com/
 Avengers,http://example.com/movie2.mp4$User-Agent=Mozilla/5.0$Referer=https://example.com/
@@ -2867,7 +2874,7 @@ http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd</textarea>
             custom: []
         };
         
-        // PWA Variables - FIXED: Added Service Worker cleanup
+        // PWA Variables
         let deferredPrompt = null;
         const pwaInstall = document.getElementById('pwaInstall');
         const installToast = document.getElementById('installToast');
@@ -3698,7 +3705,7 @@ http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd</textarea>
             updateAriaLive(isOnline ? 'Connection online' : 'Connection offline');
         }
         
-        // Clear Pyodide cache - FIXED: Added timestamp to prevent reload loop
+        // Clear Pyodide cache
         async function clearPyodideCache() {
             try {
                 if ('indexedDB' in window) {
@@ -4989,9 +4996,9 @@ http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd</textarea>
             }
         }
         
-        // ========== CORE CONVERSION FUNCTIONS ==========
+        // ========== CORE CONVERSION FUNCTIONS - PERBAIKAN PARSING M3U ==========
         
-        // Load the Python conversion code with DUAL DELIMITER support and MULTI-FORMAT
+        // Load the Python conversion code with FIXED PARSING for M3U headers
         async function loadPythonCode() {
             const pythonCode = `
 import requests
@@ -5103,12 +5110,13 @@ def extract_channel_name_from_extinf(extinf_line):
     return channel_name
 
 def parse_m3u_streaming(content, param_delimiter='$'):
-    """Parse M3U with support for dual delimiter - optimized for large files"""
+    """Parse M3U with support for dual delimiter - FIXED VERSION for stream headers"""
     lines = content.split('\\n')
     current_channel = None
     urls = []
     kodiprop_license = {}
     extvlcopt_params = {}
+    stream_headers = {}  # New: untuk menangkap stream_headers
     
     # For large files, use iterator
     for i, line in enumerate(lines):
@@ -5121,9 +5129,12 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     current_channel['kodiprop'] = kodiprop_license.copy()
                 if extvlcopt_params:
                     current_channel['extvlcopt'] = extvlcopt_params.copy()
+                if stream_headers:
+                    current_channel['stream_headers'] = stream_headers.copy()
                 yield current_channel
                 kodiprop_license = {}
                 extvlcopt_params = {}
+                stream_headers = {}  # Reset untuk channel baru
             
             current_channel = {
                 'name': 'Unnamed Channel',
@@ -5134,6 +5145,7 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                 'tvg_logo': '',
                 'kodiprop': {},
                 'extvlcopt': {},
+                'stream_headers': {},
                 'urls': []
             }
             
@@ -5173,15 +5185,71 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                 current_channel['group'] = 'No Group'
         
         elif line.startswith('#KODIPROP:'):
+            # Handle license_type
             if 'license_type=' in line:
                 match = re.search(r'license_type=([^ \\n]+)', line)
                 if match:
                     kodiprop_license['license_type'] = match.group(1).strip()
             
+            # Handle license_key
             if 'license_key=' in line:
                 match = re.search(r'license_key=([^ \\n]+)', line)
                 if match:
                     kodiprop_license['license_key'] = match.group(1).strip()
+            
+            # Handle stream_headers - PERBAIKAN BESAR
+            if 'stream_headers=' in line:
+                # Extract header content after 'stream_headers='
+                match = re.search(r'stream_headers=(.+)', line)
+                if match:
+                    header_content = match.group(1).strip()
+                    
+                    # Parse User-Agent - handle various formats
+                    if 'user-agent=' in header_content.lower():
+                        # Case 1: user-agent=value
+                        ua_match = re.search(r'user-agent=([^&\\n]+)', header_content, re.IGNORECASE)
+                        if ua_match:
+                            stream_headers['User-Agent'] = ua_match.group(1).strip()
+                    elif 'User-Agent=' in header_content:
+                        # Case 2: User-Agent=value
+                        ua_match = re.search(r'User-Agent=([^&\\n]+)', header_content)
+                        if ua_match:
+                            stream_headers['User-Agent'] = ua_match.group(1).strip()
+                    elif '|user-agent=' in header_content:
+                        # Case 3: |user-agent=value
+                        ua_match = re.search(r'\\|user-agent=([^&\\n]+)', header_content, re.IGNORECASE)
+                        if ua_match:
+                            stream_headers['User-Agent'] = ua_match.group(1).strip()
+                    
+                    # Parse Referer
+                    if 'referer=' in header_content.lower():
+                        ref_match = re.search(r'referer=([^&\\n]+)', header_content, re.IGNORECASE)
+                        if ref_match:
+                            stream_headers['Referer'] = ref_match.group(1).strip()
+                    elif 'Referer=' in header_content:
+                        ref_match = re.search(r'Referer=([^&\\n]+)', header_content)
+                        if ref_match:
+                            stream_headers['Referer'] = ref_match.group(1).strip()
+                    
+                    # Parse Origin
+                    if 'origin=' in header_content.lower():
+                        origin_match = re.search(r'origin=([^&\\n]+)', header_content, re.IGNORECASE)
+                        if origin_match:
+                            stream_headers['Origin'] = origin_match.group(1).strip()
+                    elif 'Origin=' in header_content:
+                        origin_match = re.search(r'Origin=([^&\\n]+)', header_content)
+                        if origin_match:
+                            stream_headers['Origin'] = origin_match.group(1).strip()
+                    
+                    # Parse Connection
+                    if 'connection=' in header_content.lower():
+                        conn_match = re.search(r'connection=([^&\\n]+)', header_content, re.IGNORECASE)
+                        if conn_match:
+                            stream_headers['Connection'] = conn_match.group(1).strip()
+                    elif 'Connection=' in header_content:
+                        conn_match = re.search(r'Connection=([^&\\n]+)', header_content)
+                        if conn_match:
+                            stream_headers['Connection'] = conn_match.group(1).strip()
         
         elif line.startswith('#EXTVLCOPT:'):
             line_without_prefix = line[11:].strip()
@@ -5213,11 +5281,14 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     current_channel['kodiprop'] = kodiprop_license.copy()
                 if extvlcopt_params:
                     current_channel['extvlcopt'] = extvlcopt_params.copy()
+                if stream_headers:
+                    current_channel['stream_headers'] = stream_headers.copy()
                 yield current_channel
             current_channel = None
             urls = []
             kodiprop_license = {}
             extvlcopt_params = {}
+            stream_headers = {}
     
     if current_channel and urls:
         current_channel['urls'] = urls.copy()
@@ -5225,6 +5296,8 @@ def parse_m3u_streaming(content, param_delimiter='$'):
             current_channel['kodiprop'] = kodiprop_license.copy()
         if extvlcopt_params:
             current_channel['extvlcopt'] = extvlcopt_params.copy()
+        if stream_headers:
+            current_channel['stream_headers'] = stream_headers.copy()
         yield current_channel
 
 def parse_m3u(content):
@@ -5311,7 +5384,7 @@ def parse_txt(content, txt_delimiter=',', param_delimiter='$'):
     return channels
 
 def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', parameters=None):
-    """Convert M3U content to TXT format with dual delimiter"""
+    """Convert M3U content to TXT format with dual delimiter - FIXED VERSION"""
     if parameters is None:
         parameters = {}
     
@@ -5369,6 +5442,20 @@ def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', para
                 else:
                     clean_key = key.replace('http-', '').replace('-', '_')
                     all_params[clean_key] = value
+            
+            # FIXED: Handle stream_headers
+            stream_headers = channel.get('stream_headers', {})
+            for key, value in stream_headers.items():
+                if key.lower() in ['user-agent', 'user_agent']:
+                    all_params['User-Agent'] = value
+                elif key.lower() in ['referer', 'referrer']:
+                    all_params['Referer'] = value
+                elif key.lower() == 'origin':
+                    all_params['Origin'] = value
+                elif key.lower() == 'connection':
+                    all_params['Connection'] = value
+                else:
+                    all_params[key] = value
             
             for key, value in parameters.items():
                 if key not in all_params:
@@ -5455,8 +5542,11 @@ def convert_txt_to_m3u(txt_content, txt_delimiter=',', param_delimiter='$', para
         if 'timeout' in all_params:
             output_lines.append(f'#EXTVLCOPT:http-timeout={all_params["timeout"]}')
         
+        if 'Connection' in all_params:
+            output_lines.append(f'#EXTVLCOPT:connection={all_params["Connection"]}')
+        
         for key, value in all_params.items():
-            if key not in ['license-key', 'license-type', 'User-Agent', 'Referer', 'Origin', 'Cookie', 'timeout']:
+            if key not in ['license-key', 'license-type', 'User-Agent', 'Referer', 'Origin', 'Cookie', 'timeout', 'Connection']:
                 if not key.startswith('#EXTVLCOPT:'):
                     output_lines.append(f'#EXTVLCOPT:{key}={value}')
                 else:
@@ -5688,6 +5778,7 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
             
             await pyodide.runPythonAsync(pythonCode);
             logToConsole('Python conversion code loaded! (Dual delimiter + Multi-format + 200MB support)', 'success');
+            logToConsole('FIXED: Now properly parses stream headers like User-Agent, Referer, Origin from #KODIPROP:inputstream.adaptive.stream_headers', 'success');
         }
         
         // ========== BATCH MODE FUNCTIONS - OPTIMIZED ==========
@@ -6128,6 +6219,7 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
                 isPythonLoaded = true;
                 
                 logToConsole('Python runtime ready to use! (Dual delimiter + Multi-format + 200MB support)', 'success');
+                logToConsole('FIXED: Now properly parses stream headers from #KODIPROP:inputstream.adaptive.stream_headers', 'success');
                 showNotification(isCached ? 
                     'Python loaded from cache! Instant load!' : 
                     'Python runtime successfully loaded! Cache saved.', 'info');
@@ -7057,9 +7149,9 @@ test_connection(${JSON.stringify(url)})
             });
         }
         
-        // ========== PWA INITIALIZATION - FIXED VERSION ==========
+        // ========== PWA INITIALIZATION ==========
         
-        // Initialize PWA - FIXED to prevent infinite reload
+        // Initialize PWA
         function initializePWA() {
             // Clean up any existing service workers
             cleanupServiceWorkers();
@@ -7145,7 +7237,7 @@ test_connection(${JSON.stringify(url)})
             setTimeout(() => notification.classList.remove('show'), 3000);
         }
         
-        // ========== INITIALIZE APP - FIXED VERSION ==========
+        // ========== INITIALIZE APP ==========
         
         window.addEventListener('load', () => {
             // Clean up service workers first to prevent infinite reload
@@ -7177,12 +7269,13 @@ test_connection(${JSON.stringify(url)})
             logToConsole('File Mode: Upload any playlist/text file (Max 200MB)', 'info');
             logToConsole('Batch Mode: Process multiple files (Max 200MB/file, 500MB total)', 'info');
             logToConsole('Parameter Filter Options system initialized', 'success');
+            logToConsole('FIXED: Now properly parses stream headers from #KODIPROP:inputstream.adaptive.stream_headers', 'success');
             updateAriaLive('M3U/TXT Converter app started with Dual Delimiter and 200MB support.');
             
             loadDelimiterSettings();
             
             // Add version to prevent caching issues
-            const version = 'v1.0.3';
+            const version = 'v1.0.4';
             console.log(`M3U/TXT Converter Version: ${version}`);
         });
         
