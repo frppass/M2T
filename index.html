@@ -4539,7 +4539,7 @@ https://example.com/live/eds/AFNHD/mediampd/AFNHD.mpd</textarea>
                                     try:
                                         if not re.search(channel_pattern, line, re.IGNORECASE):
                                             skip_current = True
-                                    except:
+                                    except Exception as e:
                                         pass
                             
                             if (scope == 'all' or 
@@ -4609,7 +4609,7 @@ https://example.com/live/eds/AFNHD/mediampd/AFNHD.mpd</textarea>
                                                                 try:
                                                                     should_keep = should_keep or bool(re.search(regex_pattern, key))
                                                                 except:
-                                                                pass
+                                                                    pass
                                                         else:
                                                             should_keep = key not in params
                                                             if regex_pattern:
