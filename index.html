@@ -2464,30 +2464,17 @@
                             <div class="url-examples">
                                 <h4>Playlist Examples:</h4>
                                 <ul class="url-list" role="list">
-                                    <li role="button" tabindex="0" data-input='#EXTM3U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
+                                    <li role="button" tabindex="0" data-input='#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=367f9bf4d0684f109d74a9eeb68d32be:59983c58c1b0daa1dcc370f697ccaead
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#EXTINF:-1 tvg-id="Asian Food Network.id" tvg-name="Asian Food Network.id" tvg-logo="https://mimipipi22.github.io/logo/lifestyle/afn.jpg" group-title="LIFESTYLE",AFN
+https://atemecdnbalancer-voe.sysln.id/live/eds/AFNHD/mediampd/AFNHD.mpd'>M3U dengan User-Agent dengan spasi</li>
+                                    <li role="button" tabindex="0" data-input='#KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=c3004565365a42d08e3bde39a516d64e:dbfdc0967cfbbed01dba730c99d9c14a
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 #EXTINF:-1 tvg-id="IPTVTV.id" tvg-name="IPTVTV" tvg-logo="https://example.com/logo.jpg" group-title="IPTV",IPTV TV
-http://example.com/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://imgur.com/QMB9sFW.png" group-title="Cignal", BBC Earth
-http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd
-
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=http://example.com/forsat/forsat.php
-#KODIPROP:inputstream.adaptive.stream_headers=user-agent=ExoPlayerLib/2.10.5
-#EXTINF:-1 tvg-id="HBO.id" tvg-name="HBO" tvg-logo="example.com /logo/movies/hbo.jpg" group-title="MOVIES",HBO
-https://example.com:1000/live/master/3/4028c6856b6088c3016b87d64b970b53/manifest.mpd
-
-#KODIPROP:inputstream.adaptive.stream_headers=Origin=https://www.example.com
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.example.com
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.stream_headers=Connection=keep-alive
-#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=|user-agent=ExoPlayerLib/2.19.1& Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="HBO" group-title="MOVIES" group-logo="" tvg-logo="https://iili.io/Ju79f8g.png",HBO
-https://example.com/atm/DASH/hbo/manifest.mpd'>M3U with license and streaming headers</li>
+http://example.com/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd'>M3U dengan license dan streaming headers</li>
                                     <li role="button" tabindex="0" data-input='MOVIES,#genre#
 John Wick,http://example.com/movie1.m3u8$license-key=abc123$license-type=clearkey$User-Agent=Mozilla/5.0$Referer=https://example.com/
 Avengers,http://example.com/movie2.mp4$User-Agent=Mozilla/5.0$Referer=https://example.com/
@@ -2495,9 +2482,6 @@ Avengers,http://example.com/movie2.mp4$User-Agent=Mozilla/5.0$Referer=https://ex
 SPORTS,#genre#
 Premier League,http://example.com/sport1.mpd$license-key=def456$license-type=org.w3.clearkey$User-Agent=Mozilla/5.0
 NBA Live,http://example.com/sport2.m3u8'>Example TXT with parameters (delimiter $)</li>
-                                    <li role="button" tabindex="0" data-input='MOVIES,#genre#
-John Wick,http://example.com/movie1.m3u8#license-key=abc123#license-type=clearkey#User-Agent=Mozilla/5.0#Referer=https://example.com/
-Avengers,http://example.com/movie2.mp4#User-Agent=Mozilla/5.0#Referer=https://example.com/'>Example TXT with parameters (delimiter #)</li>
                                 </ul>
                             </div>
                         </div>
@@ -2577,25 +2561,20 @@ Avengers,http://example.com/movie2.mp4#User-Agent=Mozilla/5.0#Referer=https://ex
                         
                         <div class="option-group">
                             <label for="manualInput">Paste M3U or TXT content:</label>
-                            <textarea id="manualInput" placeholder="Paste M3U or TXT code here..." rows="12" aria-label="Manual input">#EXTM3U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c3004565365a42d08e3bde39a516d64e:dbfdc0967cfbbed01dba730c99d9c14a
-#EXTVLCOPT:http-referrer=http://example.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTINF:-1 tvg-id="IPTVTV.id" tvg-name="IPTVTV" tvg-logo="https://example.com/logo.jpg" group-title="IPTV",IPTV TV
-http://example.com/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd
-
-#EXTINF:-1 tvg-id="" tvg-logo="https://imgur.com/QMB9sFW.png" group-title="Cignal", BBC Earth
-http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd</textarea>
+                            <textarea id="manualInput" placeholder="Paste M3U or TXT code here..." rows="12" aria-label="Manual input">#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=367f9bf4d0684f109d74a9eeb68d32be:59983c58c1b0daa1dcc370f697ccaead
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#EXTINF:-1 tvg-id="Asian Food Network.id" tvg-name="Asian Food Network.id" tvg-logo="https://mimipipi22.github.io/logo/lifestyle/afn.jpg" group-title="LIFESTYLE",AFN
+https://atemecdnbalancer-voe.sysln.id/live/eds/AFNHD/mediampd/AFNHD.mpd</textarea>
                         </div>
                         
                         <div class="example-txt-content" id="txtExample" style="display: none;">
-                            <strong>Example TXT format with parameter delimiter #:</strong><br>
+                            <strong>Example TXT format with parameter delimiter $:</strong><br>
                             MOVIES,#genre#<br>
-                            John Wick,http://example.com/movie1.m3u8#license-key=abc123#license-type=clearkey#User-Agent=Mozilla/5.0<br>
-                            Avengers,http://example.com/movie2.mp4#User-Agent=Mozilla/5.0<br><br>
+                            John Wick,http://example.com/movie1.m3u8$license-key=abc123$license-type=clearkey$User-Agent=Mozilla/5.0<br>
+                            Avengers,http://example.com/movie2.mp4$User-Agent=Mozilla/5.0<br><br>
                             SPORTS,#genre#<br>
-                            Premier League,http://example.com/sport1.mpd#license-key=def456#license-type=org.w3.clearkey#User-Agent=Mozilla/5.0
+                            Premier League,http://example.com/sport1.mpd$license-key=def456$license-type=org.w3.clearkey$User-Agent=Mozilla/5.0
                         </div>
                         
                         <button class="btn btn-full" id="processManualBtn" aria-label="Process manual input with Python">
@@ -4630,7 +4609,7 @@ http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd</textarea>
                                                                 try:
                                                                     should_keep = should_keep or bool(re.search(regex_pattern, key))
                                                                 except:
-                                                                    pass
+                                                                pass
                                                         else:
                                                             should_keep = key not in params
                                                             if regex_pattern:
@@ -4996,9 +4975,9 @@ http://example.com/bpk-tv/cg_bbcearth_hd1/default/index.mpd</textarea>
             }
         }
         
-        // ========== CORE CONVERSION FUNCTIONS - PERBAIKAN PARSING M3U ==========
+        // ========== CORE CONVERSION FUNCTIONS - FIXED PARSING FOR M3U HEADERS ==========
         
-        // Load the Python conversion code with FIXED PARSING for M3U headers
+        // Load the Python conversion code with FIXED PARSING for M3U headers (http-user-agent with spaces)
         async function loadPythonCode() {
             const pythonCode = `
 import requests
@@ -5110,13 +5089,12 @@ def extract_channel_name_from_extinf(extinf_line):
     return channel_name
 
 def parse_m3u_streaming(content, param_delimiter='$'):
-    """Parse M3U with support for dual delimiter - FIXED VERSION for stream headers"""
+    """Parse M3U with support for dual delimiter - FIXED VERSION for stream headers with spaces"""
     lines = content.split('\\n')
     current_channel = None
     urls = []
     kodiprop_license = {}
     extvlcopt_params = {}
-    stream_headers = {}  # New: untuk menangkap stream_headers
     
     # For large files, use iterator
     for i, line in enumerate(lines):
@@ -5129,12 +5107,9 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     current_channel['kodiprop'] = kodiprop_license.copy()
                 if extvlcopt_params:
                     current_channel['extvlcopt'] = extvlcopt_params.copy()
-                if stream_headers:
-                    current_channel['stream_headers'] = stream_headers.copy()
                 yield current_channel
                 kodiprop_license = {}
                 extvlcopt_params = {}
-                stream_headers = {}  # Reset untuk channel baru
             
             current_channel = {
                 'name': 'Unnamed Channel',
@@ -5145,7 +5120,6 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                 'tvg_logo': '',
                 'kodiprop': {},
                 'extvlcopt': {},
-                'stream_headers': {},
                 'urls': []
             }
             
@@ -5187,88 +5161,69 @@ def parse_m3u_streaming(content, param_delimiter='$'):
         elif line.startswith('#KODIPROP:'):
             # Handle license_type
             if 'license_type=' in line:
-                match = re.search(r'license_type=([^ \\n]+)', line)
+                match = re.search(r'license_type=([^\\\\n]+)', line)
                 if match:
                     kodiprop_license['license_type'] = match.group(1).strip()
             
             # Handle license_key
             if 'license_key=' in line:
-                match = re.search(r'license_key=([^ \\n]+)', line)
+                match = re.search(r'license_key=([^\\\\n]+)', line)
                 if match:
                     kodiprop_license['license_key'] = match.group(1).strip()
-            
-            # Handle stream_headers - PERBAIKAN BESAR
-            if 'stream_headers=' in line:
-                # Extract header content after 'stream_headers='
-                match = re.search(r'stream_headers=(.+)', line)
-                if match:
-                    header_content = match.group(1).strip()
-                    
-                    # Parse User-Agent - handle various formats
-                    if 'user-agent=' in header_content.lower():
-                        # Case 1: user-agent=value
-                        ua_match = re.search(r'user-agent=([^&\\n]+)', header_content, re.IGNORECASE)
-                        if ua_match:
-                            stream_headers['User-Agent'] = ua_match.group(1).strip()
-                    elif 'User-Agent=' in header_content:
-                        # Case 2: User-Agent=value
-                        ua_match = re.search(r'User-Agent=([^&\\n]+)', header_content)
-                        if ua_match:
-                            stream_headers['User-Agent'] = ua_match.group(1).strip()
-                    elif '|user-agent=' in header_content:
-                        # Case 3: |user-agent=value
-                        ua_match = re.search(r'\\|user-agent=([^&\\n]+)', header_content, re.IGNORECASE)
-                        if ua_match:
-                            stream_headers['User-Agent'] = ua_match.group(1).strip()
-                    
-                    # Parse Referer
-                    if 'referer=' in header_content.lower():
-                        ref_match = re.search(r'referer=([^&\\n]+)', header_content, re.IGNORECASE)
-                        if ref_match:
-                            stream_headers['Referer'] = ref_match.group(1).strip()
-                    elif 'Referer=' in header_content:
-                        ref_match = re.search(r'Referer=([^&\\n]+)', header_content)
-                        if ref_match:
-                            stream_headers['Referer'] = ref_match.group(1).strip()
-                    
-                    # Parse Origin
-                    if 'origin=' in header_content.lower():
-                        origin_match = re.search(r'origin=([^&\\n]+)', header_content, re.IGNORECASE)
-                        if origin_match:
-                            stream_headers['Origin'] = origin_match.group(1).strip()
-                    elif 'Origin=' in header_content:
-                        origin_match = re.search(r'Origin=([^&\\n]+)', header_content)
-                        if origin_match:
-                            stream_headers['Origin'] = origin_match.group(1).strip()
-                    
-                    # Parse Connection
-                    if 'connection=' in header_content.lower():
-                        conn_match = re.search(r'connection=([^&\\n]+)', header_content, re.IGNORECASE)
-                        if conn_match:
-                            stream_headers['Connection'] = conn_match.group(1).strip()
-                    elif 'Connection=' in header_content:
-                        conn_match = re.search(r'Connection=([^&\\n]+)', header_content)
-                        if conn_match:
-                            stream_headers['Connection'] = conn_match.group(1).strip()
         
         elif line.startswith('#EXTVLCOPT:'):
             line_without_prefix = line[11:].strip()
             
-            user_agent_match = re.search(r'http-user-agent=([^\\s]+)', line_without_prefix)
-            if user_agent_match:
-                extvlcopt_params['http-user-agent'] = user_agent_match.group(1).strip()
+            # FIXED: Tangkap keseluruhan value untuk http-user-agent dengan spasi
+            # Pattern yang benar untuk menangkap semua parameter
+            # Cari pola key=value dengan value yang bisa mengandung spasi
+            params = {}
             
-            referrer_match = re.search(r'http-referrer=([^\\s]+)', line_without_prefix)
-            if not referrer_match:
-                referrer_match = re.search(r'http-referer=([^\\s]+)', line_without_prefix)
-            if referrer_match:
-                extvlcopt_params['http-referrer'] = referrer_match.group(1).strip()
+            # Untuk parameter yang mengandung spasi, kita perlu parsing khusus
+            # Split by space first, then reconstruct
+            parts = line_without_prefix.split()
+            current_key = None
+            current_value_parts = []
             
-            param_matches = re.findall(r'([a-zA-Z0-9_-]+)=([^\\s]+)', line_without_prefix)
-            for key, value in param_matches:
-                key_lower = key.lower()
-                if key_lower not in ['http-user-agent', 'http-referrer', 'http-referer']:
-                    extvlcopt_params[key] = value.strip()
+            for part in parts:
+                if '=' in part:
+                    # Jika sudah ada key sebelumnya, simpan dulu
+                    if current_key and current_value_parts:
+                        params[current_key] = ' '.join(current_value_parts).strip()
+                        current_value_parts = []
+                    
+                    # Parse key=value
+                    key_value = part.split('=', 1)
+                    if len(key_value) == 2:
+                        current_key = key_value[0].strip()
+                        current_value_parts = [key_value[1].strip()]
+                    else:
+                        current_key = key_value[0].strip()
+                        current_value_parts = []
+                elif current_key:
+                    # Ini adalah bagian dari value sebelumnya
+                    current_value_parts.append(part)
+                else:
+                    # Tidak ada key, skip
+                    continue
+            
+            # Simpan parameter terakhir
+            if current_key and current_value_parts:
+                params[current_key] = ' '.join(current_value_parts).strip()
+            
+            # Map ke extvlcopt_params
+            for key, value in params.items():
+                if key.lower() in ['http-user-agent', 'user-agent', 'user_agent']:
+                    extvlcopt_params['http-user-agent'] = value
+                elif key.lower() in ['http-referrer', 'http-referer', 'referer']:
+                    extvlcopt_params['http-referrer'] = value
+                elif key.lower() == 'origin':
+                    extvlcopt_params['Origin'] = value
+                elif key.lower() == 'cookie':
+                    extvlcopt_params['Cookie'] = value
+                else:
+                    clean_key = key.replace('http-', '').replace('-', '_')
+                    extvlcopt_params[clean_key] = value
         
         elif line and not line.startswith('#') and current_channel:
             if line.startswith('http://') or line.startswith('https://'):
@@ -5281,14 +5236,11 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     current_channel['kodiprop'] = kodiprop_license.copy()
                 if extvlcopt_params:
                     current_channel['extvlcopt'] = extvlcopt_params.copy()
-                if stream_headers:
-                    current_channel['stream_headers'] = stream_headers.copy()
                 yield current_channel
             current_channel = None
             urls = []
             kodiprop_license = {}
             extvlcopt_params = {}
-            stream_headers = {}
     
     if current_channel and urls:
         current_channel['urls'] = urls.copy()
@@ -5296,8 +5248,6 @@ def parse_m3u_streaming(content, param_delimiter='$'):
             current_channel['kodiprop'] = kodiprop_license.copy()
         if extvlcopt_params:
             current_channel['extvlcopt'] = extvlcopt_params.copy()
-        if stream_headers:
-            current_channel['stream_headers'] = stream_headers.copy()
         yield current_channel
 
 def parse_m3u(content):
@@ -5442,20 +5392,6 @@ def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', para
                 else:
                     clean_key = key.replace('http-', '').replace('-', '_')
                     all_params[clean_key] = value
-            
-            # FIXED: Handle stream_headers
-            stream_headers = channel.get('stream_headers', {})
-            for key, value in stream_headers.items():
-                if key.lower() in ['user-agent', 'user_agent']:
-                    all_params['User-Agent'] = value
-                elif key.lower() in ['referer', 'referrer']:
-                    all_params['Referer'] = value
-                elif key.lower() == 'origin':
-                    all_params['Origin'] = value
-                elif key.lower() == 'connection':
-                    all_params['Connection'] = value
-                else:
-                    all_params[key] = value
             
             for key, value in parameters.items():
                 if key not in all_params:
@@ -5778,7 +5714,7 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
             
             await pyodide.runPythonAsync(pythonCode);
             logToConsole('Python conversion code loaded! (Dual delimiter + Multi-format + 200MB support)', 'success');
-            logToConsole('FIXED: Now properly parses stream headers like User-Agent, Referer, Origin from #KODIPROP:inputstream.adaptive.stream_headers', 'success');
+            logToConsole('FIXED: Now properly parses http-user-agent with spaces in #EXTVLCOPT:', 'success');
         }
         
         // ========== BATCH MODE FUNCTIONS - OPTIMIZED ==========
@@ -6219,7 +6155,7 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
                 isPythonLoaded = true;
                 
                 logToConsole('Python runtime ready to use! (Dual delimiter + Multi-format + 200MB support)', 'success');
-                logToConsole('FIXED: Now properly parses stream headers from #KODIPROP:inputstream.adaptive.stream_headers', 'success');
+                logToConsole('FIXED: Now properly parses http-user-agent with spaces in #EXTVLCOPT:', 'success');
                 showNotification(isCached ? 
                     'Python loaded from cache! Instant load!' : 
                     'Python runtime successfully loaded! Cache saved.', 'info');
@@ -7269,13 +7205,13 @@ test_connection(${JSON.stringify(url)})
             logToConsole('File Mode: Upload any playlist/text file (Max 200MB)', 'info');
             logToConsole('Batch Mode: Process multiple files (Max 200MB/file, 500MB total)', 'info');
             logToConsole('Parameter Filter Options system initialized', 'success');
-            logToConsole('FIXED: Now properly parses stream headers from #KODIPROP:inputstream.adaptive.stream_headers', 'success');
+            logToConsole('FIXED: Now properly parses http-user-agent with spaces in #EXTVLCOPT:', 'success');
             updateAriaLive('M3U/TXT Converter app started with Dual Delimiter and 200MB support.');
             
             loadDelimiterSettings();
             
             // Add version to prevent caching issues
-            const version = 'v1.0.4';
+            const version = 'v1.0.5';
             console.log(`M3U/TXT Converter Version: ${version}`);
         });
         
