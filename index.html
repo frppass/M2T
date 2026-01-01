@@ -2464,24 +2464,11 @@
                             <div class="url-examples">
                                 <h4>Playlist Examples:</h4>
                                 <ul class="url-list" role="list">
-                                    <li role="button" tabindex="0" data-input='#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=367f9bf4d0684f109d74a9eeb68d32be:59983c58c1b0daa1dcc370f697ccaead
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
-#EXTINF:-1 tvg-id="Asian F Network.id" tvg-name="Asian F Network.id" tvg-logo="https://example.com/logo/lifestyle/afn.jpg" group-title="LIFESTYLE",AFN
-https://example.com/live/eds/AFNHD/mediampd/AFNHD.mpd'>M3U dengan User-Agent dengan spasi</li>
-                                    <li role="button" tabindex="0" data-input='#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c3004565365a42d08e3bde39a516d64e:dbfdc0967cfbbed01dba730c99d9c14a
-#EXTVLCOPT:http-referrer=http://example.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTINF:-1 tvg-id="IPTVTV.id" tvg-name="IPTVTV" tvg-logo="https://example.com/logo.jpg" group-title="IPTV",IPTV TV
-http://example.com/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd'>M3U dengan license dan streaming headers</li>
-                                    <li role="button" tabindex="0" data-input='MOVIES,#genre#
-John Wick,http://example.com/movie1.m3u8$license-key=abc123$license-type=clearkey$User-Agent=Mozilla/5.0$Referer=https://example.com/
-Avengers,http://example.com/movie2.mp4$User-Agent=Mozilla/5.0$Referer=https://example.com/
+                                    <li role="button" tabindex="0" data-input='KIDS,#genre#
+VIVA,https://example.com/opix/genx.m3u8?id=vtv&cyev=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc$User-Agent=Oxygen TV/5.9 (Linux;Android 10) ExoPlayerLib/2.12.2$headers={"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc", "X-TOKEN": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.0BUFpzNT3h5xuYuhmKHMffBu22_78xn792rAWxKY4RQ"}
 
-SPORTS,#genre#
-Premier League,http://example.com/sport1.mpd$license-key=def456$license-type=org.w3.clearkey$User-Agent=Mozilla/5.0
-NBA Live,http://example.com/sport2.m3u8'>Example TXT with parameters (delimiter $)</li>
+LIFESTYLE,#genre#
+EAT N GO,https://example.com:1000/live/master/4/4028c6856fd0d66d0170342015d30907/manifest.mpd$license-key=http://example.com/forsattv/forsatpro1900.php$license-type=com.widevine.alpha$headers={"user-agent": "Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5"}'>Example TXT with headers JSON</li>
                                 </ul>
                             </div>
                         </div>
@@ -2561,11 +2548,11 @@ NBA Live,http://example.com/sport2.m3u8'>Example TXT with parameters (delimiter 
                         
                         <div class="option-group">
                             <label for="manualInput">Paste M3U or TXT content:</label>
-                            <textarea id="manualInput" placeholder="Paste M3U or TXT code here..." rows="12" aria-label="Manual input">#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=367f9bf4d0684f109d74a9eeb68d32be:59983c58c1b0daa1dcc370f697ccaead
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
-#EXTINF:-1 tvg-id="Asian F Network.id" tvg-name="Asian F Network.id" tvg-logo="https://example.com/logo/lifestyle/afn.jpg" group-title="LIFESTYLE",AFN
-https://example.com/live/eds/AFNHD/mediampd/AFNHD.mpd</textarea>
+                            <textarea id="manualInput" placeholder="Paste M3U or TXT code here..." rows="12" aria-label="Manual input">KIDS,#genre#
+VIVA,example.com/opix/genx.m3u8?id=vtv&cyev=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc$User-Agent=Oxygen TV/5.9 (Linux;Android 10) ExoPlayerLib/2.12.2$headers={"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc", "X-TOKEN": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.0BUFpzNT3h5xuYuhmKHMffBu22_78xn792rAWxKY4RQ"}
+
+LIFESTYLE,#genre#
+EAT N GO,https://example.com:1000/live/master/4/4028c6856fd0d66d0170342015d30907/manifest.mpd$license-key=http://example.com/forsattv/forsatpro1900.php$license-type=com.widevine.alpha$headers={"user-agent": "Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5"}</textarea>
                         </div>
                         
                         <div class="example-txt-content" id="txtExample" style="display: none;">
@@ -2741,27 +2728,27 @@ https://example.com/live/eds/AFNHD/mediampd/AFNHD.mpd</textarea>
                             <span>Status: <span id="status">Waiting...</span></span>
                         </div>
                         
-                        <!-- EXPORT OPTIONS -->
+                        <!-- EXPORT OPTIONS dengan UTF-8 - DIPERBAIKI -->
                         <div class="export-options" id="exportOptions" style="display: none;">
-                            <h4><i class="fas fa-download"></i> Export Options:</h4>
+                            <h4><i class="fas fa-download"></i> Export Options (UTF-8 Encoded):</h4>
                             <div class="export-buttons">
-                                <button class="export-btn" data-format="txt" aria-label="Export as TXT format" title="Export as TXT format">
-                                    <i class="fas fa-file-alt"></i> TXT
+                                <button class="export-btn" data-format="txt" aria-label="Export as TXT format (UTF-8)" title="Export as TXT format (UTF-8 encoded)">
+                                    <i class="fas fa-file-alt"></i> TXT (UTF-8)
                                 </button>
-                                <button class="export-btn" data-format="m3u" aria-label="Export as M3U format" title="Export as M3U (traditional format)">
-                                    <i class="fas fa-file-code"></i> M3U
+                                <button class="export-btn" data-format="m3u" aria-label="Export as M3U format (UTF-8)" title="Export as M3U format (UTF-8 encoded)">
+                                    <i class="fas fa-file-code"></i> M3U (UTF-8)
                                 </button>
-                                <button class="export-btn" data-format="m3u8" aria-label="Export as M3U8 (UTF-8 encoded)" title="Export as M3U8 (UTF-8 encoded for better compatibility)">
-                                    <i class="fas fa-file-code"></i> M3U8
-                                    <span style="font-size: 0.7rem; margin-left: 5px; color: #60a5fa;">UTF-8</span>
+                                <button class="export-btn" data-format="m3u8" aria-label="Export as M3U8 format (UTF-8 with BOM)" title="Export as M3U8 format (UTF-8 with BOM for better compatibility)">
+                                    <i class="fas fa-file-code"></i> M3U8 (UTF-8 BOM)
+                                    <span style="font-size: 0.7rem; margin-left: 5px; color: #60a5fa;">BOM</span>
                                 </button>
-                                <button class="export-btn" data-format="json" aria-label="Export as JSON format" title="Export as JSON format">
-                                    <i class="fas fa-file-code"></i> JSON
+                                <button class="export-btn" data-format="json" aria-label="Export as JSON format (UTF-8)" title="Export as JSON format (UTF-8 encoded)">
+                                    <i class="fas fa-file-code"></i> JSON (UTF-8)
                                 </button>
                             </div>
                             <div class="m3u8-info">
                                 <i class="fas fa-info-circle"></i> 
-                                <strong>M3U8</strong>: UTF-8 encoded, better for international characters and modern players
+                                <strong>All exports use UTF-8 encoding</strong> for international characters and compatibility
                             </div>
                         </div>
                         
@@ -4975,9 +4962,9 @@ https://example.com/live/eds/AFNHD/mediampd/AFNHD.mpd</textarea>
             }
         }
         
-        // ========== CORE CONVERSION FUNCTIONS - FIXED PARSING FOR M3U HEADERS ==========
+        // ========== CORE CONVERSION FUNCTIONS - FIXED PARSING FOR STREAM HEADERS ==========
         
-        // Load the Python conversion code with FIXED PARSING for M3U headers (http-user-agent with spaces)
+        // Load the Python conversion code with FIXED PARSING for headers JSON
         async function loadPythonCode() {
             const pythonCode = `
 import requests
@@ -5012,6 +4999,8 @@ def detect_format(content, txt_delimiter=',', param_delimiter='$'):
         if line.startswith('#KODIPROP:'):
             m3u_indicators += 1
         if line.startswith('#EXTVLCOPT:'):
+            m3u_indicators += 1
+        if line.startswith('#EXTHTTP:'):
             m3u_indicators += 1
         
         # TXT indicators with param delimiter
@@ -5089,16 +5078,18 @@ def extract_channel_name_from_extinf(extinf_line):
     return channel_name
 
 def parse_m3u_streaming(content, param_delimiter='$'):
-    """Parse M3U with support for dual delimiter - FIXED VERSION for stream headers with spaces"""
+    """Parse M3U with support for dual delimiter - FIXED VERSION for stream headers"""
     lines = content.split('\\n')
     current_channel = None
     urls = []
     kodiprop_license = {}
     extvlcopt_params = {}
+    exthttp_headers = {}
+    current_kodiprop = {}
     
-    # For large files, use iterator
-    for i, line in enumerate(lines):
-        line = line.strip()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
         
         if line.startswith('#EXTINF:'):
             if current_channel and urls:
@@ -5107,9 +5098,12 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     current_channel['kodiprop'] = kodiprop_license.copy()
                 if extvlcopt_params:
                     current_channel['extvlcopt'] = extvlcopt_params.copy()
+                if exthttp_headers:
+                    current_channel['exthttp'] = exthttp_headers.copy()
                 yield current_channel
                 kodiprop_license = {}
                 extvlcopt_params = {}
+                exthttp_headers = {}
             
             current_channel = {
                 'name': 'Unnamed Channel',
@@ -5120,6 +5114,7 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                 'tvg_logo': '',
                 'kodiprop': {},
                 'extvlcopt': {},
+                'exthttp': {},
                 'urls': []
             }
             
@@ -5159,60 +5154,37 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                 current_channel['group'] = 'No Group'
         
         elif line.startswith('#KODIPROP:'):
-            # Handle license_type
-            if 'license_type=' in line:
-                match = re.search(r'license_type=([^\\\\n]+)', line)
-                if match:
-                    kodiprop_license['license_type'] = match.group(1).strip()
+            # Tangani semua KODIPROP dalam satu line
+            line_without_prefix = line[10:].strip()
             
-            # Handle license_key
-            if 'license_key=' in line:
-                match = re.search(r'license_key=([^\\\\n]+)', line)
-                if match:
-                    kodiprop_license['license_key'] = match.group(1).strip()
+            # Cari semua parameter dalam line ini
+            # Format: inputstream.adaptive.license_type=com.widevine.alpha
+            # atau: inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
+            
+            # Pisahkan berdasarkan '=', ambil semuanya karena value mungkin mengandung '='
+            parts = line_without_prefix.split('=', 1)
+            if len(parts) == 2:
+                key = parts[0].strip()
+                value = parts[1].strip()
+                
+                if 'license_type' in key:
+                    kodiprop_license['license_type'] = value
+                elif 'license_key' in key:
+                    kodiprop_license['license_key'] = value
+                elif 'stream_headers' in key:
+                    # Simpan SEMUA teks setelah '=' untuk stream_headers
+                    kodiprop_license['stream_headers'] = value
         
         elif line.startswith('#EXTVLCOPT:'):
             line_without_prefix = line[11:].strip()
             
-            # FIXED: Tangkap keseluruhan value untuk http-user-agent dengan spasi
-            # Pattern yang benar untuk menangkap semua parameter
-            # Cari pola key=value dengan value yang bisa mengandung spasi
-            params = {}
-            
-            # Untuk parameter yang mengandung spasi, kita perlu parsing khusus
-            # Split by space first, then reconstruct
-            parts = line_without_prefix.split()
-            current_key = None
-            current_value_parts = []
-            
-            for part in parts:
-                if '=' in part:
-                    # Jika sudah ada key sebelumnya, simpan dulu
-                    if current_key and current_value_parts:
-                        params[current_key] = ' '.join(current_value_parts).strip()
-                        current_value_parts = []
-                    
-                    # Parse key=value
-                    key_value = part.split('=', 1)
-                    if len(key_value) == 2:
-                        current_key = key_value[0].strip()
-                        current_value_parts = [key_value[1].strip()]
-                    else:
-                        current_key = key_value[0].strip()
-                        current_value_parts = []
-                elif current_key:
-                    # Ini adalah bagian dari value sebelumnya
-                    current_value_parts.append(part)
-                else:
-                    # Tidak ada key, skip
-                    continue
-            
-            # Simpan parameter terakhir
-            if current_key and current_value_parts:
-                params[current_key] = ' '.join(current_value_parts).strip()
-            
-            # Map ke extvlcopt_params
-            for key, value in params.items():
+            # Tangani semua parameter EXTVLCOPT
+            # Format: http-user-agent=Oxygen TV/5.9 (Linux;Android 10) ExoPlayerLib/2.12.2
+            parts = line_without_prefix.split('=', 1)
+            if len(parts) == 2:
+                key = parts[0].strip()
+                value = parts[1].strip()
+                
                 if key.lower() in ['http-user-agent', 'user-agent', 'user_agent']:
                     extvlcopt_params['http-user-agent'] = value
                 elif key.lower() in ['http-referrer', 'http-referer', 'referer']:
@@ -5225,6 +5197,22 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     clean_key = key.replace('http-', '').replace('-', '_')
                     extvlcopt_params[clean_key] = value
         
+        elif line.startswith('#EXTHTTP:'):
+            # Tangani header EXTHTTP dengan JSON content
+            line_without_prefix = line[9:].strip()
+            
+            try:
+                # Coba parse sebagai JSON
+                headers_json = json.loads(line_without_prefix)
+                if isinstance(headers_json, dict):
+                    exthttp_headers.update(headers_json)
+                else:
+                    # Jika bukan JSON valid, simpan sebagai string
+                    exthttp_headers['raw'] = line_without_prefix
+            except json.JSONDecodeError:
+                # Jika bukan JSON valid, simpan sebagai string
+                exthttp_headers['raw'] = line_without_prefix
+        
         elif line and not line.startswith('#') and current_channel:
             if line.startswith('http://') or line.startswith('https://'):
                 urls.append(line.strip())
@@ -5236,11 +5224,16 @@ def parse_m3u_streaming(content, param_delimiter='$'):
                     current_channel['kodiprop'] = kodiprop_license.copy()
                 if extvlcopt_params:
                     current_channel['extvlcopt'] = extvlcopt_params.copy()
+                if exthttp_headers:
+                    current_channel['exthttp'] = exthttp_headers.copy()
                 yield current_channel
             current_channel = None
             urls = []
             kodiprop_license = {}
             extvlcopt_params = {}
+            exthttp_headers = {}
+        
+        i += 1
     
     if current_channel and urls:
         current_channel['urls'] = urls.copy()
@@ -5248,6 +5241,8 @@ def parse_m3u_streaming(content, param_delimiter='$'):
             current_channel['kodiprop'] = kodiprop_license.copy()
         if extvlcopt_params:
             current_channel['extvlcopt'] = extvlcopt_params.copy()
+        if exthttp_headers:
+            current_channel['exthttp'] = exthttp_headers.copy()
         yield current_channel
 
 def parse_m3u(content):
@@ -5334,7 +5329,7 @@ def parse_txt(content, txt_delimiter=',', param_delimiter='$'):
     return channels
 
 def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', parameters=None):
-    """Convert M3U content to TXT format with dual delimiter - FIXED VERSION"""
+    """Convert M3U content to TXT format with dual delimiter - FIXED VERSION dengan stream_headers support"""
     if parameters is None:
         parameters = {}
     
@@ -5379,6 +5374,31 @@ def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', para
                 license_type = kodiprop.get('license_type', 'clearkey')
                 all_params['license-type'] = license_type
             
+            # Handle stream_headers from KODIPROP (FIXED - SIMPAN SEMUA TANPA PARSING)
+            if 'stream_headers' in kodiprop:
+                stream_headers_value = kodiprop['stream_headers']
+                # Simpan sebagai JSON dengan key "user-agent" (jika ada) atau simpan semua
+                try:
+                    # Coba parse untuk mendapatkan user-agent
+                    if 'user-agent=' in stream_headers_value.lower():
+                        # Cari user-agent dalam stream_headers
+                        import re
+                        ua_match = re.search(r'user-agent=([^\\s]+(?:\\s+[^\\s]+)*)', stream_headers_value, re.IGNORECASE)
+                        if ua_match:
+                            ua_value = ua_match.group(1)
+                            # Buat headers JSON
+                            headers_dict = {"user-agent": ua_value}
+                            all_params['headers'] = json.dumps(headers_dict, ensure_ascii=False)
+                        else:
+                            # Jika tidak bisa parse, simpan langsung
+                            all_params['headers'] = stream_headers_value
+                    else:
+                        # Simpan langsung jika tidak ada user-agent
+                        all_params['headers'] = stream_headers_value
+                except:
+                    # Jika error, simpan langsung
+                    all_params['headers'] = stream_headers_value
+            
             extvlcopt = channel.get('extvlcopt', {})
             for key, value in extvlcopt.items():
                 if key.lower() in ['http-user-agent', 'user-agent', 'user_agent']:
@@ -5393,6 +5413,27 @@ def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', para
                     clean_key = key.replace('http-', '').replace('-', '_')
                     all_params[clean_key] = value
             
+            exthttp = channel.get('exthttp', {})
+            if exthttp:
+                # Combine all headers into a JSON object
+                headers_dict = {}
+                if 'raw' in exthttp:
+                    try:
+                        # Try to parse raw as JSON
+                        raw_json = json.loads(exthttp['raw'])
+                        if isinstance(raw_json, dict):
+                            headers_dict.update(raw_json)
+                    except:
+                        # If not JSON, add as raw
+                        headers_dict['raw'] = exthttp['raw']
+                else:
+                    # Add all exthttp headers
+                    headers_dict.update(exthttp)
+                
+                # Convert to JSON string
+                if headers_dict:
+                    all_params['headers'] = json.dumps(headers_dict, ensure_ascii=False)
+            
             for key, value in parameters.items():
                 if key not in all_params:
                     all_params[key] = value
@@ -5402,7 +5443,14 @@ def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', para
                 if all_params:
                     param_strings = []
                     for key, value in all_params.items():
-                        param_strings.append(f'{key}={value}')
+                        # Escape value jika mengandung delimiter
+                        if param_delimiter == '#':
+                            # Escape # dalam value
+                            escaped_value = str(value).replace('#', '%23')
+                        else:
+                            escaped_value = str(value)
+                        
+                        param_strings.append(f'{key}={escaped_value}')
                     
                     if param_delimiter == '#':
                         url_with_params += '#' + '#'.join(param_strings)
@@ -5420,7 +5468,7 @@ def convert_m3u_to_txt(m3u_content, txt_delimiter=',', param_delimiter='$', para
     return result, total_urls, len(grouped)
 
 def convert_txt_to_m3u(txt_content, txt_delimiter=',', param_delimiter='$', parameters=None):
-    """Convert TXT content to M3U format with dual delimiter"""
+    """Convert TXT content to M3U format with dual delimiter - FIXED VERSION untuk headers JSON"""
     if parameters is None:
         parameters = {}
     
@@ -5457,12 +5505,74 @@ def convert_txt_to_m3u(txt_content, txt_delimiter=',', param_delimiter='$', para
         
         all_params = {**channel.get('params', {}), **parameters}
         
+        # Handle license parameters
         if 'license-key' in all_params:
             output_lines.append(f'#KODIPROP:inputstream.adaptive.license_key={all_params["license-key"]}')
         
         if 'license-type' in all_params:
             output_lines.append(f'#KODIPROP:inputstream.adaptive.license_type={all_params["license-type"]}')
         
+        # Handle headers parameter (from stream_headers or exthttp)
+        if 'headers' in all_params:
+            headers_value = all_params['headers']
+            
+            # Try to parse as JSON
+            try:
+                # Clean the headers value first
+                headers_clean = headers_value.strip()
+                if headers_clean.startswith('{') and headers_clean.endswith('}'):
+                    headers_dict = json.loads(headers_clean)
+                    
+                    if isinstance(headers_dict, dict):
+                        # Check if it contains Authorization or X-TOKEN headers
+                        has_auth_header = any(key.lower() in ['authorization', 'x-token', 'x-access-token'] 
+                                             for key in headers_dict.keys())
+                        
+                        if has_auth_header:
+                            # Use #EXTHTTP: for Authorization headers
+                            output_lines.append(f'#EXTHTTP:{json.dumps(headers_dict)}')
+                        else:
+                            # For non-Auth headers, use #KODIPROP:stream_headers
+                            # Convert headers dict to string format
+                            headers_str = ''
+                            for key, value in headers_dict.items():
+                                if key.lower() == 'user-agent':
+                                    headers_str += f'user-agent={value}'
+                                else:
+                                    headers_str += f'{key}={value}'
+                                headers_str += ' '
+                            
+                            output_lines.append(f'#KODIPROP:inputstream.adaptive.stream_headers={headers_str.strip()}')
+                    else:
+                        # Not a dict, use as-is
+                        output_lines.append(f'#KODIPROP:inputstream.adaptive.stream_headers={headers_value}')
+                else:
+                    # Not JSON, check if it contains Authorization
+                    if 'Authorization' in headers_value or 'authorization' in headers_value or 'Bearer' in headers_value:
+                        # Try to parse as JSON even without braces
+                        try:
+                            # Try to add braces and parse
+                            if not headers_clean.startswith('{'):
+                                headers_clean = '{' + headers_clean + '}'
+                            headers_dict = json.loads(headers_clean)
+                            output_lines.append(f'#EXTHTTP:{json.dumps(headers_dict)}')
+                        except:
+                            # If not JSON, use as-is in #EXTHTTP:
+                            output_lines.append(f'#EXTHTTP:{headers_value}')
+                    else:
+                        # No Authorization, use as stream_headers
+                        output_lines.append(f'#KODIPROP:inputstream.adaptive.stream_headers={headers_value}')
+            except json.JSONDecodeError:
+                # Not JSON, check if it contains Authorization
+                if 'Authorization' in headers_value or 'authorization' in headers_value or 'Bearer' in headers_value:
+                    output_lines.append(f'#EXTHTTP:{headers_value}')
+                else:
+                    output_lines.append(f'#KODIPROP:inputstream.adaptive.stream_headers={headers_value}')
+            except Exception as e:
+                # Any other error, fallback to stream_headers
+                output_lines.append(f'#KODIPROP:inputstream.adaptive.stream_headers={headers_value}')
+        
+        # Handle other common parameters
         if 'User-Agent' in all_params:
             output_lines.append(f'#EXTVLCOPT:http-user-agent={all_params["User-Agent"]}')
         
@@ -5481,8 +5591,9 @@ def convert_txt_to_m3u(txt_content, txt_delimiter=',', param_delimiter='$', para
         if 'Connection' in all_params:
             output_lines.append(f'#EXTVLCOPT:connection={all_params["Connection"]}')
         
+        # Add any remaining parameters as EXTVLCOPT
         for key, value in all_params.items():
-            if key not in ['license-key', 'license-type', 'User-Agent', 'Referer', 'Origin', 'Cookie', 'timeout', 'Connection']:
+            if key not in ['license-key', 'license-type', 'headers', 'User-Agent', 'Referer', 'Origin', 'Cookie', 'timeout', 'Connection']:
                 if not key.startswith('#EXTVLCOPT:'):
                     output_lines.append(f'#EXTVLCOPT:{key}={value}')
                 else:
@@ -5677,21 +5788,36 @@ def process_local_content(content, txt_delimiter=',', param_delimiter='$', direc
         }
 
 def convert_to_json(content, txt_delimiter=',', param_delimiter='$', direction='m3u2txt', parameters=None):
-    """Convert content to JSON format with dual delimiter"""
+    """Convert content to JSON format with UTF-8 encoding"""
     if parameters is None:
         parameters = {}
     
-    if direction == 'm3u2txt':
-        channels = parse_m3u(content)
-    else:
-        channels = parse_txt(content, txt_delimiter, param_delimiter)
-    
-    return json.dumps({
-        'channels': channels,
-        'count': len(channels),
-        'groups': list(set(channel['group'] for channel in channels)),
-        'parameters': parameters
-    }, indent=2)
+    try:
+        if direction == 'm3u2txt':
+            channels = parse_m3u(content)
+        else:
+            channels = parse_txt(content, txt_delimiter, param_delimiter)
+        
+        result_json = json.dumps({
+            'channels': channels,
+            'count': len(channels),
+            'groups': list(set(channel['group'] for channel in channels)),
+            'parameters': parameters,
+            'encoding': 'UTF-8'
+        }, indent=2, ensure_ascii=False)
+        
+        return result_json, len(channels), len(set(channel['group'] for channel in channels))
+    except Exception as e:
+        # Fallback: minimal JSON with error info
+        fallback_json = json.dumps({
+            'error': str(e),
+            'message': 'Failed to create full JSON, returning basic data',
+            'channels_count': 0,
+            'groups_count': 0,
+            'parameters': parameters,
+            'encoding': 'UTF-8'
+        }, indent=2, ensure_ascii=False)
+        return fallback_json, 0, 0
 
 def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', direction='m3u2txt', parameters=None):
     """Export content to M3U8 format (UTF-8 with BOM)"""
@@ -5705,16 +5831,54 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
         m3u8_content, channel_count, group_count = content, 0, 0
     
     try:
+        # Ensure UTF-8 encoding with BOM for M3U8
         m3u8_bytes = m3u8_content.encode('utf-8')
         m3u8_with_bom = b'\\xef\\xbb\\xbf' + m3u8_bytes
         return m3u8_with_bom.decode('utf-8'), channel_count, group_count
     except Exception as e:
+        # Fallback: return original content without BOM
         return m3u8_content, channel_count, group_count
+
+def export_with_utf8(content, format_type='txt', txt_delimiter=',', param_delimiter='$', direction='m3u2txt', parameters=None):
+    """Export content in specified format with UTF-8 encoding"""
+    if parameters is None:
+        parameters = {}
+    
+    try:
+        if format_type == 'json':
+            json_output, channel_count, group_count = convert_to_json(content, txt_delimiter, param_delimiter, direction, parameters)
+            return json_output.encode('utf-8'), 'application/json; charset=utf-8', f'playlist.json'
+        
+        elif format_type == 'm3u8':
+            m3u8_output, channel_count, group_count = convert_to_m3u8_export(content, txt_delimiter, param_delimiter, direction, parameters)
+            return m3u8_output.encode('utf-8'), 'application/vnd.apple.mpegurl; charset=utf-8', f'playlist.m3u8'
+        
+        elif format_type == 'm3u':
+            if direction == 'txt2m3u':
+                m3u_output, channel_count, group_count = convert_txt_to_m3u(content, txt_delimiter, param_delimiter, parameters)
+            else:
+                m3u_output = content
+            return m3u_output.encode('utf-8'), 'audio/x-mpegurl; charset=utf-8', f'playlist.m3u'
+        
+        else:  # txt
+            if direction == 'm3u2txt':
+                txt_output, channel_count, group_count = convert_m3u_to_txt(content, txt_delimiter, param_delimiter, parameters)
+            else:
+                txt_output = content
+            return txt_output.encode('utf-8'), 'text/plain; charset=utf-8', f'playlist.txt'
+    
+    except Exception as e:
+        # Fallback: return original content with UTF-8
+        return content.encode('utf-8', errors='replace'), 'text/plain; charset=utf-8', f'playlist.{format_type}'
 `;
             
             await pyodide.runPythonAsync(pythonCode);
             logToConsole('Python conversion code loaded! (Dual delimiter + Multi-format + 200MB support)', 'success');
-            logToConsole('FIXED: Now properly parses http-user-agent with spaces in #EXTVLCOPT:', 'success');
+            logToConsole('FIXED: Now properly handles headers JSON with Authorization and X-TOKEN', 'success');
+            logToConsole('FIXED: Preserves ALL headers when converting TXT to M3U', 'success');
+            logToConsole('ADDED: Support for #EXTHTTP: headers with JSON content', 'success');
+            logToConsole('FIXED: Parameter "headers" dengan Authorization akan dikonversi ke #EXTHTTP:', 'success');
+            logToConsole('ENHANCED: All exports now use UTF-8 encoding', 'success');
         }
         
         // ========== BATCH MODE FUNCTIONS - OPTIMIZED ==========
@@ -6155,7 +6319,11 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
                 isPythonLoaded = true;
                 
                 logToConsole('Python runtime ready to use! (Dual delimiter + Multi-format + 200MB support)', 'success');
-                logToConsole('FIXED: Now properly parses http-user-agent with spaces in #EXTVLCOPT:', 'success');
+                logToConsole('FIXED: Now properly handles headers JSON with Authorization and X-TOKEN', 'success');
+                logToConsole('FIXED: Preserves ALL headers when converting TXT to M3U', 'success');
+                logToConsole('ADDED: Support for #EXTHTTP: headers with JSON content', 'success');
+                logToConsole('FIXED: Parameter "headers" dengan Authorization akan dikonversi ke #EXTHTTP:', 'success');
+                logToConsole('ENHANCED: All exports now use UTF-8 encoding', 'success');
                 showNotification(isCached ? 
                     'Python loaded from cache! Instant load!' : 
                     'Python runtime successfully loaded! Cache saved.', 'info');
@@ -6591,6 +6759,121 @@ def convert_to_m3u8_export(content, txt_delimiter=',', param_delimiter='$', dire
             }
         }
         
+        // ========== EXPORT FUNCTIONS DENGAN UTF-8 - DIPERBAIKI ==========
+        
+        // Export function for all formats with UTF-8 encoding - DIPERBAIKI
+        async function exportFile(format) {
+            if (!convertedOutput) {
+                showNotification('No content to export', 'warning');
+                return;
+            }
+            
+            try {
+                const txtDelimiter = getTxtDelimiter();
+                const paramDelimiter = getParamDelimiter();
+                const parameters = getActiveParameters();
+                
+                logToConsole(`Exporting as ${format.toUpperCase()} with UTF-8 encoding...`, 'info');
+                
+                let fileContent = convertedOutput;
+                let fileName = 'playlist.txt';
+                let mimeType = 'text/plain; charset=utf-8';
+                
+                if (format === 'json') {
+                    // Export as JSON
+                    try {
+                        const jsonData = {
+                            data: convertedOutput,
+                            format: conversionDirection,
+                            delimiter: {
+                                txt: txtDelimiter,
+                                param: paramDelimiter
+                            },
+                            parameters: parameters,
+                            encoding: 'UTF-8',
+                            timestamp: new Date().toISOString()
+                        };
+                        fileContent = JSON.stringify(jsonData, null, 2);
+                        fileName = 'playlist.json';
+                        mimeType = 'application/json; charset=utf-8';
+                    } catch (e) {
+                        logToConsole(`JSON creation failed: ${e.message}`, 'warning');
+                        fileContent = `{"error": "JSON creation failed", "data": ${JSON.stringify(convertedOutput)}, "encoding": "UTF-8"}`;
+                        fileName = 'playlist.json';
+                        mimeType = 'application/json; charset=utf-8';
+                    }
+                } else if (format === 'm3u8') {
+                    // Export as M3U8 with UTF-8 BOM
+                    try {
+                        // Add UTF-8 BOM (Byte Order Mark)
+                        const bom = '\uFEFF';
+                        fileContent = bom + convertedOutput;
+                        fileName = 'playlist.m3u8';
+                        mimeType = 'application/vnd.apple.mpegurl; charset=utf-8';
+                    } catch (e) {
+                        logToConsole(`M3U8 creation failed: ${e.message}`, 'warning');
+                        fileContent = convertedOutput;
+                        fileName = 'playlist.m3u8';
+                        mimeType = 'application/vnd.apple.mpegurl; charset=utf-8';
+                    }
+                } else if (format === 'm3u') {
+                    // Export as M3U
+                    fileName = 'playlist.m3u';
+                    mimeType = 'audio/x-mpegurl; charset=utf-8';
+                } else {
+                    // Export as TXT (default)
+                    fileName = 'playlist.txt';
+                    mimeType = 'text/plain; charset=utf-8';
+                }
+                
+                // Create blob with UTF-8 encoding
+                const blob = new Blob([fileContent], { 
+                    type: mimeType 
+                });
+                
+                // Create download link
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = fileName;
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                
+                // Trigger download
+                a.click();
+                
+                // Clean up
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                logToConsole(`File exported as ${format.toUpperCase()} with UTF-8 encoding`, 'success');
+                showNotification(`File ${fileName} exported successfully! (UTF-8)`, 'success');
+                updateAriaLive(`File exported as ${format.toUpperCase()} with UTF-8 encoding`);
+                
+            } catch (error) {
+                console.error(`Error exporting to ${format}:`, error);
+                logToConsole(`Export error: ${error.message}`, 'error');
+                showNotification(`Export failed: ${error.message}`, 'error');
+                
+                // Fallback: simple export without special encoding
+                try {
+                    const blob = new Blob([convertedOutput], { type: 'text/plain; charset=utf-8' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `playlist.${format}`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    
+                    showNotification(`File exported with fallback method`, 'info');
+                } catch (fallbackError) {
+                    showNotification(`Export completely failed: ${fallbackError.message}`, 'error');
+                }
+            }
+        }
+        
         // ========== EVENT LISTENERS ==========
         
         // Initialize event listeners for all modes
@@ -6745,6 +7028,7 @@ test_connection(${JSON.stringify(url)})
                 const fileExt = conversionDirection === 'm3u2txt' ? '.txt' : '.m3u';
                 const fileName = `converted_${timestamp}${fileExt}`;
                 
+                // Use UTF-8 encoding for download
                 const blob = new Blob([convertedOutput], { type: 'text/plain;charset=utf-8' });
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
@@ -6755,8 +7039,8 @@ test_connection(${JSON.stringify(url)})
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
                 
-                showNotification(`File ${fileName} downloaded successfully!`);
-                updateAriaLive(`File ${fileName} downloaded`);
+                showNotification(`File ${fileName} downloaded successfully! (UTF-8)`);
+                updateAriaLive(`File ${fileName} downloaded with UTF-8 encoding`);
             });
             
             // Clear button
@@ -6918,6 +7202,14 @@ test_connection(${JSON.stringify(url)})
                 }
             });
             
+            // Export buttons - UPDATED FOR UTF-8 (DIPERBAIKI)
+            exportButtons.forEach(btn => {
+                btn.addEventListener('click', async () => {
+                    const format = btn.dataset.format;
+                    await exportFile(format);
+                });
+            });
+            
             // Copy fallback modal
             copySelectAllBtn.addEventListener('click', () => {
                 copyFallbackTextarea.select();
@@ -6940,100 +7232,6 @@ test_connection(${JSON.stringify(url)})
                 if (e.target === copyFallback) {
                     copyFallback.style.display = 'none';
                 }
-            });
-            
-            // Export buttons
-            exportButtons.forEach(btn => {
-                btn.addEventListener('click', async () => {
-                    if (!convertedOutput) return;
-                    
-                    const format = btn.dataset.format;
-                    const timestamp = new Date().toISOString().slice(0,10).replace(/-/g, '');
-                    const parameters = getActiveParameters();
-                    let output = convertedOutput;
-                    let fileName = `converted_${timestamp}`;
-                    let mimeType = 'text/plain;charset=utf-8';
-                    
-                    try {
-                        if (format === 'json') {
-                            const result = await pyodide.runPythonAsync(`
-                                import json
-                                result = convert_to_json(
-                                    ${JSON.stringify(convertedOutput)}, 
-                                    ${JSON.stringify(getTxtDelimiter())}, 
-                                    ${JSON.stringify(getParamDelimiter())}, 
-                                    ${JSON.stringify(conversionDirection)},
-                                    ${JSON.stringify(parameters)}
-                                )
-                                json.dumps({'output': result})
-                            `);
-                            const data = JSON.parse(result);
-                            output = data.output;
-                            fileName += '.json';
-                            mimeType = 'application/json';
-                        } else if (format === 'm3u8') {
-                            const result = await pyodide.runPythonAsync(`
-                                import json
-                                result = convert_to_m3u8_export(
-                                    ${JSON.stringify(convertedOutput)}, 
-                                    ${JSON.stringify(getTxtDelimiter())}, 
-                                    ${JSON.stringify(getParamDelimiter())}, 
-                                    ${JSON.stringify(conversionDirection)},
-                                    ${JSON.stringify(parameters)}
-                                )
-                                json.dumps({'output': result})
-                            `);
-                            const data = JSON.parse(result);
-                            output = data.output;
-                            fileName += '.m3u8';
-                            mimeType = 'application/vnd.apple.mpegurl; charset=utf-8';
-                            
-                            logToConsole('Exported as M3U8 (UTF-8 with BOM)', 'success');
-                            showNotification('Exported as M3U8 (UTF-8 encoded)', 'info');
-                        } else if (format === 'm3u') {
-                            fileName += '.m3u';
-                            mimeType = 'audio/x-mpegurl';
-                        } else {
-                            fileName += '.txt';
-                        }
-                        
-                        const blob = new Blob([output], { type: mimeType });
-                        const url = URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = fileName;
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                        URL.revokeObjectURL(url);
-                        
-                        showNotification(`File ${fileName} exported successfully!`);
-                        updateAriaLive(`File exported as ${format}`);
-                        
-                    } catch (error) {
-                        logToConsole(`Error exporting to ${format}: ${error.message}`, 'error');
-                        showNotification(`Failed to export to ${format}`, 'error');
-                        
-                        if (format === 'm3u8') {
-                            try {
-                                const blob = new Blob([convertedOutput], { type: 'audio/x-mpegurl' });
-                                const url = URL.createObjectURL(blob);
-                                const a = document.createElement('a');
-                                a.href = url;
-                                a.download = fileName.replace('.m3u8', '.m3u');
-                                document.body.appendChild(a);
-                                a.click();
-                                document.body.removeChild(a);
-                                URL.revokeObjectURL(url);
-                                
-                                showNotification('Exported as M3U (fallback)', 'info');
-                                logToConsole('Fallback to M3U successful', 'info');
-                            } catch (fallbackError) {
-                                logToConsole(`Fallback also failed: ${fallbackError.message}`, 'error');
-                            }
-                        }
-                    }
-                });
             });
             
             // URL examples click
@@ -7111,7 +7309,7 @@ test_connection(${JSON.stringify(url)})
                     setTimeout(() => {
                         installToast.classList.add('show');
                     }, 5000); // Show after 5 seconds
-                }
+                    }
                 
                 logToConsole('App can be installed to homescreen!', 'success');
             });
@@ -7205,14 +7403,18 @@ test_connection(${JSON.stringify(url)})
             logToConsole('File Mode: Upload any playlist/text file (Max 200MB)', 'info');
             logToConsole('Batch Mode: Process multiple files (Max 200MB/file, 500MB total)', 'info');
             logToConsole('Parameter Filter Options system initialized', 'success');
-            logToConsole('FIXED: Now properly parses http-user-agent with spaces in #EXTVLCOPT:', 'success');
+            logToConsole('FIXED: Now properly handles headers JSON with Authorization and X-TOKEN', 'success');
+            logToConsole('FIXED: Preserves ALL headers when converting TXT to M3U', 'success');
+            logToConsole('ADDED: Support for #EXTHTTP: headers with JSON content', 'success');
+            logToConsole('FIXED: Parameter "headers" dengan Authorization akan dikonversi ke #EXTHTTP:', 'success');
+            logToConsole('ENHANCED: All exports now use UTF-8 encoding', 'success');
             updateAriaLive('M3U/TXT Converter app started with Dual Delimiter and 200MB support.');
             
             loadDelimiterSettings();
             
             // Add version to prevent caching issues
-            const version = 'v1.0.5';
-            console.log(`M3U/TXT Converter Version: ${version}`);
+            const version = 'v1.2.0';
+            console.log(`M3U/TXT Converter Version: ${version} - UTF-8 Export Support`);
         });
         
         window.addEventListener('beforeunload', () => {
